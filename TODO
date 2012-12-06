@@ -1,0 +1,2 @@
+- Make scaling work
+- Use GIO to get a local path, so we can support remote files

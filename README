@@ -1,0 +1,8 @@
+Thumbnailer for GIMP's own format, XCF files
+
+License and copyright:
+All the *.c and *.h files except gnome-xcf-thumbnailer.c are from
+xcftools 1.0.4 by Henning Makholm <henning@makholm.net>
+http://henning.makholm.net/software
+
+Changes by Nick Black <nick.black@sprezzatech.com> copyright 2012

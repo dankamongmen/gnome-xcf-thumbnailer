@@ -1,0 +1,53 @@
+<gconfschemafile>
+  <schemalist>
+
+    <schema>
+      <applyto>/desktop/gnome/thumbnailers/image@x-compressed-xcf/command</applyto>
+      <key>/schemas/desktop/gnome/thumbnailers/image@x-compressed-xcf/command</key>
+      <owner>gnome-xcf-thumbnailer</owner>
+      <type>string</type>
+      <default>@bindir@/gnome-xcf-thumbnailer %i %o</default>
+      <locale name="C">
+        <short></short>
+        <long></long>
+      </locale>
+    </schema>
+
+    <schema>
+      <applyto>/desktop/gnome/thumbnailers/image@x-compressed-xcf/enable</applyto>
+      <key>/schemas/desktop/gnome/thumbnailers/image@x-compressed-xcf/enable</key>
+      <owner>gnome-xcf-thumbnailer</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short></short>
+        <long></long>
+      </locale>
+    </schema>
+
+    <schema>
+      <applyto>/desktop/gnome/thumbnailers/image@x-xcf/command</applyto>
+      <key>/schemas/desktop/gnome/thumbnailers/image@x-xcf/command</key>
+      <owner>gnome-xcf-thumbnailer</owner>
+      <type>string</type>
+      <default>@bindir@/gnome-xcf-thumbnailer %i %o</default>
+      <locale name="C">
+        <short></short>
+        <long></long>
+      </locale>
+    </schema>
+
+    <schema>
+      <applyto>/desktop/gnome/thumbnailers/image@x-xcf/enable</applyto>
+      <key>/schemas/desktop/gnome/thumbnailers/image@x-xcf/enable</key>
+      <owner>gnome-xcf-thumbnailer</owner>
+      <type>bool</type>
+      <default>true</default>
+      <locale name="C">
+        <short></short>
+        <long></long>
+      </locale>
+    </schema>
+
+  </schemalist>
+</gconfschemafile>
