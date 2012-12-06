@@ -210,7 +210,15 @@ complete_flatspec(struct FlattenSpec *spec, guesser guess_callback)
     }
   }
   computeDimensions(&spec->dim);
-  
+
+  /* We can't handle negative coordinates properly, so abort rather than
+   * crash chaotically. See CVE-2009-217; Debian bug #533361.
+   */
+  if( spec->dim.c.t < 0 || spec->dim.c.l < 0 ) {
+    FatalUnsupportedXCF("This version cannot extract pixels above or to the "
+                        "left of the canvas");
+  }
+
   /* Turn off layers that we don't hit at all */
   for( i=0; i<spec->numLayers; i++ )
     if( spec->layers[i].isVisible &&
