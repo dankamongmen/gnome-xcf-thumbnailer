@@ -40,7 +40,7 @@ if GCONF_SCHEMAS_INSTALL
         fi
 endif
 
-uninstall-data-local:
+uninstall-local:
 	rm -f $(DESTDIR)/${datadir}/thumbnailers/gnome-xcf.thumbnailer
 
 EXTRA_DIST = gnome-xcf.thumbnailer gnome-xcf-thumbnailer.schemas.in \
