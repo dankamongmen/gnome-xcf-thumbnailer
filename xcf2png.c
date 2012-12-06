@@ -70,10 +70,8 @@ init_output(void)
   png_bytep ptrans = NULL ;
   
   outfile = openout(flatspec.output_filename);
-  libpng = png_create_write_struct(PNG_LIBPNG_VER_STRING,
-                                   png_voidp_NULL,
-                                   my_error_callback,
-                                   png_error_ptr_NULL);
+  libpng = png_create_write_struct(PNG_LIBPNG_VER_STRING, (png_infopp)NULL,
+                                   my_error_callback, (png_error_ptr)NULL);
   if( !libpng )
     FatalUnexpected(_("Couldn't initialize libpng library"));
   
