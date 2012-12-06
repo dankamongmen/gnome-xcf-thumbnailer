@@ -1,0 +1,8 @@
+INSTALL
+autom4te.cache/
+compile
+config.h.in~
+configure
+depcomp
+install-sh
+missing
