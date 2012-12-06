@@ -1,8 +1,15 @@
-Thumbnailer for GIMP's own format, XCF files
+Thumbnailer for GIMP's XCF format
+
+To build+install:
+
+ autoreconf -sif
+ ./configure
+ make
+ sudo make install
 
 License and copyright:
-All the *.c and *.h files except gnome-xcf-thumbnailer.c are from
-xcftools 1.0.4 by Henning Makholm <henning@makholm.net>
-http://henning.makholm.net/software
+All the *.c and *.h files except gnome-xcf-thumbnailer.c and
+gnome-xcf.thumbnailer are originally xcftools 1.0.4 by Henning Makholm
+<henning@makholm.net> (http://henning.makholm.net/software).
 
 Changes by Nick Black <nick.black@sprezzatech.com> copyright 2012
